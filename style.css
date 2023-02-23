@@ -343,7 +343,7 @@ section>.box-item-2 {
     float: right;
     margin-right: 20px;
     font-size: 39px;
-    margin-top: -50px;
+    margin-top: -100px;
     display: none;
 }
 
@@ -434,9 +434,16 @@ section>.box-item-2 {
 /* CODE ĐẶC BIỆT */
 
  /* Cho Mobile */
-@media only screen and (max-width: 739px) {
+ 
+@media only screen and (max-width: 666px) and (min-width: 338px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: arial;
+    }
     .container {
-        width: 739px;
+        width: 100%;
         height: auto;
         margin: 0 auto;
         
