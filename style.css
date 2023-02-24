@@ -435,7 +435,7 @@ section>.box-item-2 {
 
  /* Cho Mobile */
  
-@media only screen and (max-width: 666px) and (min-width: 338px) {
+@media only screen and (max-width: 666px) and (min-width: 320px) {
 
     *{
         margin: 0;
@@ -446,6 +446,9 @@ section>.box-item-2 {
         width: 100%;
         height: auto;
         margin: 0 auto;
+        overflow: hidden;
+       
+
         
     }
 
@@ -459,6 +462,7 @@ section>.box-item-2 {
         font-weight: 700;
         margin-top: 25px;
         margin-left: 20px;
+        
     }
 
     header {
@@ -467,11 +471,19 @@ section>.box-item-2 {
         height: 100px;
         background-color: aquamarine;
         margin-bottom: 20px;
-      
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        
     }
 
-   
+    section {
+        width: 100%;
+    }
 
+  
     section>.box-item-2 {
 
         display: grid;
@@ -493,6 +505,11 @@ section>.box-item-2 {
 
     .icon-bar {
         display: block;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 45px;
+        
+        
     }
 
     .nav__mobile {
@@ -509,6 +526,8 @@ section>.box-item-2 {
         margin-left: 19px;
     }
 }
+
+
 
 @keyframes forOverlay {
 
